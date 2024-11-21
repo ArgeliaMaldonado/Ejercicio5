@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Interactivo</title>
+    <style>
+        .menu {
+            background-color: #DE1BC3;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu li a {
+             text-decoration: none;
+             padding: 10px 20px;
+             color: #333;
+             display: block;
+             font-weight: bold;
+            
+        }
+
+        .menu li a:hover {
+            background-color: grey;
+            color: #fff;
+        }
+
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: pink;
+            border: 1px solid #ddd;
+            list-style: none;
+            padding: 0;
+            z-index: 10;
+        }
+
+        .menu li ul li {
+            width: 150px;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://www.uv.mx/">Inicio</a></li>
+            <li>
+                <a href="https://eminus.uv.mx/eminus4/">Servicios</a>
+                <ul>
+                    <li><a href="https://www.canva.com/">Editor de presentaciones</a></li>
+                    <li><a href="https://appinventor.mit.edu/">Desarrollo de apliaciones</a></li>
+                    <li><a href="https://open.spotify.com/">Streaming</a></li>
+                </ul>
+            </li>
+            <li><a href="https://argeliamaldonado.github.io/index.html/">Portafolio</a></li>
+            <li><a href="https://argeliamaldonado.github.io/Actividad3/">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
